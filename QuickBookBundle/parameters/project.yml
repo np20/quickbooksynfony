@@ -1,0 +1,43 @@
+# This file is auto-generated during the composer install
+parameters:
+    database.cats.dsn: mysql:host=localhost;dbname=cats_db
+    database.cats.username: root
+    database.cats.password: 
+    quickbookUrl: https://sandbox-quickbooks.api.intuit.com
+    oauthUrl: https://appcenter.intuit.com/connect/oauth2
+    oauthEndUrl: https://oauth.platform.intuit.com/oauth2/v1/tokens/bearer
+    grantType: refresh_token
+    refreshToken: L011538844147L8ChPE3UZJiGlJsQOxPSOxQdSM9BuVXixjxhc
+    #change after 101 days
+    clientId: Q0HtOCFvtIVxQyiVEcqBcywDu7ZY0btmBau4RKzOJy1vVjnDnz
+    clientSecret: rwCIvNnDnucCAgPpWtKbdmiEVqlMK4bKhfuPXozK
+    realmId: 123146057504139
+    responseType: code
+    scope: com.intuit.quickbooks.accounting
+    redirectUri: http://localhost/vtech-tool/web/app_dev.php/api/v1/oauth/redirect-url
+    grantType_code: authorization_code
+    state: RandomState
+
+    database.icehrmdb.dsn: mysql:host=localhost;dbname=icehrmdb
+    database.icehrmdb.username: root
+    database.icehrmdb.password:
+
+    database.mappingdb.dsn: mysql:host=localhost;dbname=vtech_mappingdb
+    database.mappingdb.username: root
+    database.mappingdb.password:
+
+    database.vtech_tools.dsn: mysql:host=localhost;dbname=vtech_tools
+    database.vtech_tools.username: root
+    database.vtech_tools.password:
+
+    database.monster.dsn: mysql:host=localhost;dbname=monster
+    database.monster.username: root
+    database.monster.password: 
+
+    adobeAuth_url: https://secure.na1.echosign.com/public/oauth
+    adobeAuthEnd_url: api.na1.echosign.com/oauth/token
+    adobeRedirect_uri: https://saas.vtechsolution.com:4443/api/v1/adobe/redirect-url
+    adobeClient_id: CBJCHBCAABAAKIk6LyVWFbdfBTb9UUlQz5hAIxh9bY5K
+    adobeClient_secret: YlWk9k8fdXMgM3y3FAWb4Tos8vmFxaXY
+    adobeScope: user_login:account+agreement_send:account
+    adobeState: S6YQD7KDA556DIV6NAU4ELTGSIV26ZNMXDSF7WIEEP0ZLQCLDQ89OYG78C3K9SROC8DXCGRVSGKU1IT1

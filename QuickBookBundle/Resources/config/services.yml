@@ -1,0 +1,28 @@
+services:
+    v_tech_solution_quick_book.start:
+        class: vTechSolution\Bundle\QuickBookBundle\Manager\QuickBookService
+        arguments: ["@service_container"]
+
+    v_tech_solution_quick_book.icehrmdb:
+      class: vTechSolution\Bundle\ResumeParseBundle\Helper\Pdodb
+      arguments:
+        - %database.icehrmdb.dsn%
+        - %database.icehrmdb.username%
+        - %database.icehrmdb.password%
+      calls:
+        - [setDsn, [%database.icehrmdb.dsn%]]
+        - [setUsername, [%database.icehrmdb.username%]]
+        - [setPassword, [%database.icehrmdb.password%]]
+
+    v_tech_solution_quick_book.mappingdb:
+      class: vTechSolution\Bundle\ResumeParseBundle\Helper\Pdodb
+      arguments:
+        - %database.mappingdb.dsn%
+        - %database.mappingdb.username%
+        - %database.mappingdb.password%
+      calls:
+        - [setDsn, [%database.mappingdb.dsn%]]
+        - [setUsername, [%database.mappingdb.username%]]
+        - [setPassword, [%database.mappingdb.password%]]
+
+        
